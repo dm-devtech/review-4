@@ -7,7 +7,7 @@ class Calculator {
 
   calculator(number1, mathsign, number2) {
     if(mathsign === "*"){
-     return [`${number1} ${mathsign} ${number2}`, number1*number2]
+     return this.multiplication(number1, mathsign, number2)
     }else if (mathsign === "+"){
       let sum = parseInt(number1) + parseInt(number2)
       return [`${number1} ${mathsign} ${number2}`, sum]
@@ -15,9 +15,13 @@ class Calculator {
       let subtraction = parseInt(number1) - parseInt(number2)
       return [`${number1} ${mathsign} ${number2}`, subtraction]
     }else if (mathsign === "/"){
-      let division = parseInt(number1) / parseInt(number2)
-      return [`${number1} ${mathsign} ${number2}`, parseFloat(division.toFixed(2))]
+      let division = (parseInt(number1) / parseInt(number2)).toFixed(2)
+      return [`${number1} ${mathsign} ${number2}`, parseFloat(division)]
     }
+  }
+
+  multiplication(number1, mathsign, number2) {
+    return [`${number1} ${mathsign} ${number2}`, number1*number2]
   }
 
 }
