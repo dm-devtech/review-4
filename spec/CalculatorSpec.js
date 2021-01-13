@@ -23,4 +23,9 @@ describe("Calculator", function() {
     newCalculator = new Calculator
   expect(newCalculator.result("2 + 4")).toEqual(["2 + 4", 6])
   })
+
+  it('testing sum of 300+450', function() {
+    newCalculator = new Calculator
+  expect(newCalculator.result("300 + 450")).toEqual(["300 + 450", 750])
+  })
 })
