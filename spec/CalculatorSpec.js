@@ -28,4 +28,9 @@ describe("Calculator", function() {
     newCalculator = new Calculator
   expect(newCalculator.result("300 + 450")).toEqual(["300 + 450", 750])
   })
+
+  it('testing subtraction - 200-50', function() {
+    newCalculator = new Calculator
+  expect(newCalculator.result("200 - 50")).toEqual(["200 - 50", 150])
+  })
 })
