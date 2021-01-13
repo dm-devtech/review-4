@@ -13,8 +13,7 @@ class Calculator {
     }else if (mathsign === "-"){
       return this.subtraction(number1, mathsign, number2)
     }else if (mathsign === "/"){
-      let division = (parseInt(number1) / parseInt(number2)).toFixed(2)
-      return [`${number1} ${mathsign} ${number2}`, parseFloat(division)]
+      return this.division(number1, mathsign, number2)
     }
   }
 
@@ -30,6 +29,11 @@ class Calculator {
   subtraction(number1, mathsign, number2) {
     let subtraction = parseInt(number1) - parseInt(number2)
     return [`${number1} ${mathsign} ${number2}`, subtraction]
+  }
+
+  division(number1, mathsign, number2) {
+    let division = (parseInt(number1) / parseInt(number2)).toFixed(2)
+    return [`${number1} ${mathsign} ${number2}`, parseFloat(division)]
   }
 
 }
