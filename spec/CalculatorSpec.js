@@ -18,4 +18,9 @@ describe("Calculator", function() {
     newCalculator = new Calculator
   expect(newCalculator.result("1 + 1")).toEqual(["1 + 1", 2])
   })
+
+  it('testing sum of 2+4', function() {
+    newCalculator = new Calculator
+  expect(newCalculator.result("2 + 4")).toEqual(["2 + 4", 6])
+  })
 })
