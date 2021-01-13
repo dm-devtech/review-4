@@ -6,15 +6,10 @@ class Calculator {
   }
 
   calculator(number1, mathsign, number2) {
-    if(mathsign === "*"){
-     return this.multiplication(number1, mathsign, number2)
-    }else if (mathsign === "+"){
-      return this.addition(number1, mathsign, number2)
-    }else if (mathsign === "-"){
-      return this.subtraction(number1, mathsign, number2)
-    }else if (mathsign === "/"){
-      return this.division(number1, mathsign, number2)
-    }
+    if (mathsign === "*") return this.multiplication(number1, mathsign, number2)
+    if (mathsign === "+") return this.addition(number1, mathsign, number2)
+    if (mathsign === "-") return this.subtraction(number1, mathsign, number2)
+    if (mathsign === "/") return this.division(number1, mathsign, number2)
   }
 
   multiplication(number1, mathsign, number2) {
