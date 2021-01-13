@@ -46,9 +46,14 @@ describe("Calculator", function() {
   })
 
   describe("testing division", function() {
-    it('testing subtraction - 200/2', function() {
+    it('testing division - 200/2', function() {
       newCalculator = new Calculator
     expect(newCalculator.result("200 / 2")).toEqual(["200 / 2", 100])
+    })
+
+    it('testing division - 500/3 rounds correctly', function() {
+      newCalculator = new Calculator
+    expect(newCalculator.result("500 / 3")).toEqual(["500 / 3", 166.67])
     })
   })
 

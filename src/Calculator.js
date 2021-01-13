@@ -16,7 +16,7 @@ class Calculator {
       return [`${number1} ${mathsign} ${number2}`, subtraction]
     }else if (mathsign === "/"){
       let division = parseInt(number1) / parseInt(number2)
-      return [`${number1} ${mathsign} ${number2}`, division]
+      return [`${number1} ${mathsign} ${number2}`, parseFloat(division.toFixed(2))]
     }
   }
 
