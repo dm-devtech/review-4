@@ -14,6 +14,9 @@ class Calculator {
     }else if (mathsign === "-"){
       let subtraction = parseInt(number1) - parseInt(number2)
       return [`${number1} ${mathsign} ${number2}`, subtraction]
+    }else if (mathsign === "/"){
+      let division = parseInt(number1) / parseInt(number2)
+      return [`${number1} ${mathsign} ${number2}`, division]
     }
   }
 

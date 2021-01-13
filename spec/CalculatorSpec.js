@@ -45,4 +45,11 @@ describe("Calculator", function() {
     })
   })
 
+  describe("testing division", function() {
+    it('testing subtraction - 200/2', function() {
+      newCalculator = new Calculator
+    expect(newCalculator.result("200 / 2")).toEqual(["200 / 2", 100])
+    })
+  })
+
 })
