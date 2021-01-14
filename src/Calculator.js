@@ -1,6 +1,7 @@
 class Calculator {
 
   result(string) {
+    if (string === "") throw new Error("Input must be a valid mathematical string separated by spaces")
     let stringSeparation = string.split(" ")
     return this.calculator(stringSeparation[0], stringSeparation[1], stringSeparation[2])
   }
