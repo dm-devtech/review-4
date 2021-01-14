@@ -57,4 +57,12 @@ describe("Calculator", function() {
     })
   })
 
+  describe("edge case", function() {
+    it('error displays when empty string given', function() {
+      newCalculator = new Calculator
+    expect(function() {newCalculator.result("")}).toThrowError("Input must be a valid mathematical string separated by spaces")
+    })
+
+  })
+
 })
